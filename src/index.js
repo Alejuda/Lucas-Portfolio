@@ -55,6 +55,10 @@ const worksSections = [
     name: 'Valkiria',
     tags: ['Eyewear', 'Fashion', 'Sunglasses', 'Portrait'],
   },
+  {
+    name: 'Outdoor',
+    tags: ['Landscape', 'Mountain', 'Snow', 'Beach', 'Sunset'],
+  },
 ];
 
 const logoAzul = document.getElementById('icono');
