@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500&family=Josefin+Sans:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.fraunces-font {
+  font-family: "Fraunces", serif;
+}
+
+.header-container {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  background-color: #f6f7f5c5;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 20px 40px;
+  align-items: baseline;
+  justify-content: space-between;
+  top: -200px;
+  transition: all 300ms;
+}
+
+.show-header {
+  top: 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.header-icon {
+  height: 60px;
+  margin-right: 86px;
+}
+
+.nav-instagram {
+  font-size: 20px;
+}
+
+.list-tiem-link {
+  text-decoration: none;
+  color: #1b2835;
+  padding: 3px 15px;
+  border-radius: 5px;
+  border: 1px solid #1b2835;
+}
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60vh 1fr;
+}
+
+.home-img {
+  height: 100%;
+  background-image: url(./assets/recursos/foto-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+}
+
+#home-white-logo {
+  position: absolute;
+  height: 80px;
+  left: 50%;
+  top: 70px;
+  transform: translate(-50%);
+}
+
+#imagen-lucas {
+  position: absolute;
+  height: 250px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  box-shadow: 5px 5px 10px rgba(58, 58, 58, 0.795);
+}
+
+.home-info {
+  background-color: #f6f7f5;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.name-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #1b2835;
+  gap: 1px;
+}
+
+.home-text {
+  padding: 7px 10px;
+  font-size: 30px;
+  background-color: #f6f7f5;
+  font-weight: 400;
+}
+
+.see-portfolio {
+  text-decoration: none;
+  color: #1b2835;
+  font-family: "Fraunces", serif;
+  border: 1px solid #1b2835;
+  padding: 7px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------- */
+
+/*                  PORTFOLIO                  */
+
+/* --------------------------------------------- */
+
+.portfolio-container {
+  background-color: #f6f7f5;
+  display: grid;
+  padding: 110px 50px 50px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: minmax(auto, 1fr);
+  gap: 40px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.work-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 150ms;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.work-container:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.582);
+}
+
+.work-container:hover > .work-photo {
+  filter: brightness(1);
+}
+
+.work-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.85);
+  transition: all 150ms;
+}
+
+.work-name {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1b2835;
+  background-color: #f6f7f5be;
+  padding: 7px 15px 2px 15px;
+  border-radius: 20px;
+  line-height: 20px;
+}
