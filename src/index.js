@@ -6,6 +6,7 @@ import { getPhotoPath } from './photoImporter.js';
 
 const header = document.getElementById('header');
 const portfolioSection = document.getElementById('portfolio');
+const worksContainer = document.getElementById('works');
 const works = [
   {
     name: 'YSY-A',
@@ -41,6 +42,13 @@ const works = [
   },
 ];
 
+const worksSections = [
+  {
+    name: 'YSY-A',
+    tags: ['Live', 'Trap', 'Show', 'Artist'],
+  },
+];
+
 const logoAzul = document.getElementById('icono');
 const logoBlanco = document.getElementById('home-white-logo');
 const homeLucas = document.getElementById('imagen-lucas');
@@ -63,7 +71,7 @@ const renderWorks = () => {
   let portfolioInner = '';
   works.forEach((work) => {
     portfolioInner += `
-    <a href="#${work.name}">
+    <a href="#${work.name.split(' ')[0].toLocaleLowerCase()}">
     <div class="work-container">
         <img class="work-photo">
         <h3 class="work-name">${work.name}</h3>
@@ -74,11 +82,43 @@ const renderWorks = () => {
   portfolioSection.innerHTML = portfolioInner;
   const worksArray = Array.from(document.querySelectorAll('.work-photo'));
   worksArray.forEach((work, idx) => {
-    getPhotoPath(works[idx].photo)
-      .then((photoPath) => {
-        work.src = photoPath;
+    getPhotoPath(works[idx].photo).then((photoPath) => {
+      work.src = photoPath;
+    });
+  });
+};
+
+const renderWorkSection = () => {
+  worksSections.forEach((workSection) => {
+    const workContainer = document.createElement('div');
+    workContainer.className = 'work-section';
+    workContainer.id = `${workSection.name.split(' ')[0].toLocaleLowerCase()}`;
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.className = 'work-section-title';
+    sectionTitle.innerText = workSection.name;
+    const tags = document.createElement('h3');
+    tags.className = 'work-tags';
+    tags.innerText = workSection.tags.join(' - ');
+    const gridSectionDisplay = document.createElement('div');
+    gridSectionDisplay.className = 'work-section-image-grid';
+
+    workContainer.appendChild(sectionTitle);
+    workContainer.appendChild(tags);
+    for (let i = 1; i < 11; i += 1) {
+      const image = document.createElement('img');
+      image.className = 'work-section-image';
+      image.alt = 'Work Image';
+      getPhotoPath(
+        `./assets/${workSection.name.toLocaleLowerCase()}/${workSection.name.toLocaleLowerCase()}-${i}.jpg`,
+      ).then((photoPath) => {
+        image.src = photoPath;
+        gridSectionDisplay.appendChild(image);
       });
+    }
+    workContainer.appendChild(gridSectionDisplay);
+    worksContainer.appendChild(workContainer);
   });
 };
 
 renderWorks();
+renderWorkSection();
