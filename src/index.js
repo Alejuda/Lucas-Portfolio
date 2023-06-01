@@ -47,6 +47,14 @@ const worksSections = [
     name: 'YSY-A',
     tags: ['Live', 'Trap', 'Show', 'Artist'],
   },
+  {
+    name: 'Martha Headwear',
+    tags: ['Beanies', 'Caps', 'Bucket Hat', 'Lifestyle', 'Fashion', 'Outdoor'],
+  },
+  {
+    name: 'Valkiria',
+    tags: ['Eyewear', 'Fashion', 'Sunglasses', 'Portrait'],
+  },
 ];
 
 const logoAzul = document.getElementById('icono');
@@ -90,9 +98,10 @@ const renderWorks = () => {
 
 const renderWorkSection = () => {
   worksSections.forEach((workSection) => {
+    const prefix = workSection.name.split(' ')[0].toLocaleLowerCase();
     const workContainer = document.createElement('div');
     workContainer.className = 'work-section';
-    workContainer.id = `${workSection.name.split(' ')[0].toLocaleLowerCase()}`;
+    workContainer.id = `${prefix}`;
     const sectionTitle = document.createElement('h2');
     sectionTitle.className = 'work-section-title';
     sectionTitle.innerText = workSection.name;
@@ -109,7 +118,7 @@ const renderWorkSection = () => {
       image.className = 'work-section-image';
       image.alt = 'Work Image';
       getPhotoPath(
-        `./assets/${workSection.name.toLocaleLowerCase()}/${workSection.name.toLocaleLowerCase()}-${i}.jpg`,
+        `./assets/${prefix}/${prefix}-${i}.jpg`,
       ).then((photoPath) => {
         image.src = photoPath;
         gridSectionDisplay.appendChild(image);
