@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500&family=Josefin+Sans:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500&family=Josefin+Sans:wght@300;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html {
@@ -18,7 +18,7 @@ body {
 }
 
 .fraunces-font {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
 .header-container {
@@ -56,10 +56,10 @@ body {
 
 .list-tiem-link {
   text-decoration: none;
-  color: #1B2835;
+  color: #1b2835;
   padding: 3px 15px;
   border-radius: 5px;
-  border: 1px solid #1B2835;
+  border: 1px solid #1b2835;
 }
 
 .home-container {
@@ -83,7 +83,7 @@ body {
   position: absolute;
   height: 80px;
   left: 50%;
-  top:70px;
+  top: 70px;
   transform: translate(-50%);
 }
 
@@ -94,11 +94,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -40px;
-  box-shadow: 5px 5px 10px rgba(58, 58, 58, 0.795) ;
+  box-shadow: 5px 5px 10px rgba(58, 58, 58, 0.795);
 }
 
 .home-info {
-  background-color: #F6F7F5;
+  background-color: #f6f7f5;
   width: 100vw;
   height: 100%;
   display: flex;
@@ -111,22 +111,22 @@ body {
 .name-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #1B2835;
+  background-color: #1b2835;
   gap: 1px;
 }
 
 .home-text {
   padding: 7px 10px;
   font-size: 30px;
-  background-color: #F6F7F5;
+  background-color: #f6f7f5;
   font-weight: 400;
 }
 
 .see-portfolio {
   text-decoration: none;
-  color: #1B2835;
-  font-family: 'Fraunces', serif;
-  border: 1px solid #1B2835;
+  color: #1b2835;
+  font-family: "Fraunces", serif;
+  border: 1px solid #1b2835;
   padding: 7px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -134,13 +134,12 @@ body {
 
 .portfolio-container {
   min-height: 2000px;
-  background-color: #F6F7F5;
+  background-color: #f6f7f5;
 }
 
 /*---------------------------------------------*/
 /*                  PORTFOLIO                  */
 /*---------------------------------------------*/
-
 
 .portfolio-container {
   display: grid;
