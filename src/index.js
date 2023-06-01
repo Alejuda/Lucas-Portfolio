@@ -98,7 +98,7 @@ const renderWorks = () => {
 
 const renderWorkSection = () => {
   worksSections.forEach((workSection) => {
-    let prefix = workSection.name.split(' ')[0].toLocaleLowerCase()
+    const prefix = workSection.name.split(' ')[0].toLocaleLowerCase();
     const workContainer = document.createElement('div');
     workContainer.className = 'work-section';
     workContainer.id = `${prefix}`;
