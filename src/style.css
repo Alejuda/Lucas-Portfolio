@@ -188,3 +188,43 @@ body {
   border-radius: 20px;
   line-height: 20px;
 }
+
+.work-section {
+  padding: 110px 50px 50px 50px;
+  background-color: #f6f7f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.work-section-title {
+  color: #1b2835;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+}
+
+.work-tags {
+  color: #1b2835;
+  font-weight: 400;
+}
+
+.work-section-image-grid {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.work-section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.work-section-image:hover {
+  filter: brightness(1.3);
+}
