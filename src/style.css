@@ -136,3 +136,23 @@ body {
   min-height: 2000px;
   background-color: #F6F7F5;
 }
+
+/*---------------------------------------------*/
+/*                  PORTFOLIO                  */
+/*---------------------------------------------*/
+
+
+.portfolio-container {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.work-container {
+  width: 100%;
+}
+
+.work-photo {
+  width: 100%;
+}
