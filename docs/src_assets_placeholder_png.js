@@ -7,15 +7,15 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunklucas_portfolio"] = self["webpackChunklucas_portfolio"] || []).push([["src_assets_portfolio_martha_jpg"],{
+(self["webpackChunklucas_portfolio"] = self["webpackChunklucas_portfolio"] || []).push([["src_assets_placeholder_png"],{
 
-/***/ "./src/assets/portfolio/martha.jpg":
-/*!*****************************************!*\
-  !*** ./src/assets/portfolio/martha.jpg ***!
-  \*****************************************/
+/***/ "./src/assets/placeholder.png":
+/*!************************************!*\
+  !*** ./src/assets/placeholder.png ***!
+  \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"e41c358f9807c9ca6618.jpg\";\n\n//# sourceURL=webpack://lucas-portfolio/./src/assets/portfolio/martha.jpg?");
+eval("module.exports = __webpack_require__.p + \"35cad1d4e896c1dd6062.png\";\n\n//# sourceURL=webpack://lucas-portfolio/./src/assets/placeholder.png?");
 
 /***/ })
 

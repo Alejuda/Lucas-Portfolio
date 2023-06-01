@@ -15,7 +15,7 @@
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"8ccb8a231f9780015df3.jpg\";\n\n//# sourceURL=webpack://lucas-portfolio/./src/assets/portfolio/artash.jpg?");
+eval("module.exports = __webpack_require__.p + \"75637e450230546f8349.jpg\";\n\n//# sourceURL=webpack://lucas-portfolio/./src/assets/portfolio/artash.jpg?");
 
 /***/ })
 
