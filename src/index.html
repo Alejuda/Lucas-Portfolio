@@ -16,7 +16,9 @@
             >
           </li>
           <li class="nav-list-item">
-            <a href="#" class="list-tiem-link fraunces-font">Contacto</a>
+            <a href="#contacto" class="list-tiem-link fraunces-font"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
@@ -58,5 +60,49 @@
     </main>
     <section class="portfolio-container" id="portfolio"></section>
     <section class="works-container" id="works"></section>
+    <section id="contacto" class="contact-container">
+      <div class="blue-back"></div>
+      <div class="contact-card">
+        <div class="contact-form-container">
+          <h2 class="contact-text">Contactame</h2>
+          <form
+            class="form"
+            action="https://formspree.io/f/xbjezjap"
+            method="post"
+            id="form"
+          >
+            <input
+              class="input-control"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              required
+              maxlength="30"
+            />
+            <input
+              class="input-control"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="input-control textarea-input-control"
+              name="content"
+              id="content"
+              required
+              placeholder="Escribeme algo..."
+              maxlength="500"
+            ></textarea>
+            <button class="input-control submit-btn" type="submit" tabindex="0">
+              Contactar
+            </button>
+          </form>
+        </div>
+        <div class="contact-image"></div>
+      </div>
+    </section>
   </body>
 </html>
