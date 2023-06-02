@@ -59,6 +59,18 @@ const worksSections = [
     name: 'Outdoor',
     tags: ['Landscape', 'Mountain', 'Snow', 'Beach', 'Sunset'],
   },
+  {
+    name: 'Travel',
+    tags: ['Snowboarding', 'Lifestyle', 'Colorado', 'Portrait'],
+  },
+  {
+    name: 'Polo',
+    tags: ['Horses', 'Polo', 'Lifestyle', 'Outdoor', 'Argentina'],
+  },
+  {
+    name: 'Street',
+    tags: ['Street', 'Classic Cars', 'Architecture', 'Lifestyle'],
+  },
 ];
 
 const logoAzul = document.getElementById('icono');

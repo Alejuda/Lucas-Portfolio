@@ -53,7 +53,12 @@ body {
 
 .nav-instagram {
   font-size: 20px;
+}
+
+.instagram-link {
   color: #1b2835;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
 }
 
 .list-tiem-link {
