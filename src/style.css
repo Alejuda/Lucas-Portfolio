@@ -299,9 +299,10 @@ body {
 }
 
 .contact-image {
-  background-image: url(./assets/recursos/foto-back-peque.png);
+  background-image: url(./assets/recursos/lucas-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 50%;
 }
 
@@ -329,4 +330,22 @@ body {
   background-color: #1b2835;
   color: #f6f7f5;
   font-size: 15px;
+}
+
+.footer-container {
+  background-color: #1b2835;
+  border-top: 1px solid #f6f7f5;
+  padding: 30px;
+}
+
+.copyright {
+  font-size: 15px;
+  color: #f6f7f5;
+  font-weight: 400;
+  text-align: center;
+}
+
+.license-link {
+  color: #f6f7f5;
+  font-weight: 600;
 }
