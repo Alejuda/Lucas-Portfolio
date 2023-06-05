@@ -350,3 +350,36 @@ body {
   color: #f6f7f5;
   font-weight: 600;
 }
+
+.popup-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727c4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  place-content: center;
+  padding: 50px;
+}
+
+.popup-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.show-popup {
+  display: flex;
+  animation: show-popup 400ms linear forwards;
+}
+
+@keyframes show-popup {
+  from {
+    backdrop-filter: grayscale(0%) blur(0px);
+  }
+  to {
+    backdrop-filter: grayscale(100%) blur(5px);
+  }
+}

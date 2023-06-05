@@ -3,6 +3,7 @@ import fotoLucas from './assets/recursos/foto-lucas.png';
 import iconoAzul from './assets/logos/logo-azul.svg';
 import iconoBlanco from './assets/logos/logo-blanco.svg';
 import { getPhotoPath } from './photoImporter.js';
+import { showPopup } from './showPopup.js';
 
 const header = document.getElementById('header');
 const portfolioSection = document.getElementById('portfolio');
@@ -133,6 +134,7 @@ const renderWorkSection = () => {
       const image = document.createElement('img');
       image.className = 'work-section-image';
       image.alt = 'Work Image';
+      image.setAttribute('onclick', `showPopup(${i}, "${prefix}")`);
       getPhotoPath(
         `./assets/${prefix}/${prefix}-${i}.jpg`,
       ).then((photoPath) => {
@@ -147,3 +149,4 @@ const renderWorkSection = () => {
 
 renderWorks();
 renderWorkSection();
+window.showPopup = showPopup
