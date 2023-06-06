@@ -38,7 +38,7 @@ const works = [
     photo: './assets/portfolio/street.jpg',
   },
   {
-    name: 'Artash',
+    name: 'Artrash',
     photo: './assets/portfolio/artash.jpg',
   },
 ];
@@ -71,6 +71,10 @@ const worksSections = [
   {
     name: 'Street',
     tags: ['Street', 'Classic Cars', 'Architecture', 'Lifestyle'],
+  },
+  {
+    name: 'Artrash',
+    tags: ['Fashion', 'Tattoos', 'Fair', 'Vintage clothing', 'Social'],
   },
 ];
 
